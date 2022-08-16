@@ -5,7 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 *, *::before, *::after {
@@ -51,6 +51,35 @@ body {
   color: #ffffff;
   background-color: rgba(240, 149, 74, 0.9333333333);
   transition: 0.2s;
+}
+
+.img__info {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.info__item-time::before {
+  content: url(../img/icons/info_clock.svg);
+  margin-right: 6px;
+}
+
+.info__item-aperture::before {
+  content: url(../img/icons/info_aperture.svg);
+  margin-right: 6px;
+}
+
+.info__item-iso::before {
+  content: url(../img/icons/info_iso.svg);
+  margin-right: 6px;
+}
+
+.info__item-location::before {
+  content: url(../img/icons/info_location.svg);
+  margin-right: 6px;
 }
 
 .navigation {
@@ -166,67 +195,47 @@ body {
   }
 }
 
-.hero__content {
-  position: relative;
-  min-height: 716px;
-  max-width: 1440px;
-}
-
-.hero__img {
-  max-width: 100%;
-}
-
-.hero__text {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 470px;
-  left: 50%;
-  transform: translate(-50%);
-  max-width: 600px;
-  text-align: center;
-}
-
-.hero__title {
-  font-weight: 400;
-  font-size: 54px;
-  line-height: 1.07;
-  margin-bottom: 18px;
-  color: #ffffff;
-  order: 1;
-}
-
-.hero__subtitle {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.42;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 1px;
-  order: 0;
-}
-
-.hero__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.42;
-  text-transform: none;
-  order: 2;
-}
-
-.relaitive__box {
+.hero__box {
   width: 1440px;
-  height: 600px;
+  height: 716px;
+  text-align: center;
   position: relative;
   margin: 0 auto;
   background-color: #fff;
 }
 
-.text__box {
+.hero__text {
+  display: flex;
+  flex-direction: column;
   max-width: 600px;
   position: absolute;
   bottom: 60px;
   left: 50%;
   transform: translate(-50%);
   color: white;
+}
+
+.hero__title {
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 59px;
+  order: 1;
+  margin-bottom: 18px;
+}
+
+.hero__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  order: 0;
+  margin-bottom: 2px;
+}
+
+.hero__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  order: 2;
 }/*# sourceMappingURL=style.css.map */

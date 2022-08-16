@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
-	text-transform: capitalize;
+	text-transform: none;
 }
 
 *, *::before, *::after {
@@ -52,4 +52,35 @@ body {
 		background-color: $accent-color;
 		transition: 0.2s;
 	}
+}
+
+// Info in picture
+
+.img__info {
+	display: flex;
+	gap: 15px;
+	font-size: 12px;
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+}
+
+.info__item-time::before {
+	content: url(../img/icons/info_clock.svg);
+	margin-right: 6px;
+}
+
+.info__item-aperture::before {
+	content: url(../img/icons/info_aperture.svg);
+	margin-right: 6px;
+}
+
+.info__item-iso::before {
+	content: url(../img/icons/info_iso.svg);
+	margin-right: 6px;
+}
+
+.info__item-location::before {
+	content: url(../img/icons/info_location.svg);
+	margin-right: 6px;
 }
