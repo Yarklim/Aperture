@@ -1,0 +1,90 @@
+// -----HERO------
+.hero__box {
+	width: 1440px;
+	height: 716px;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.hero__text {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	transform: translate(-50%);
+	color: white;
+}
+
+.hero__title {
+	font-weight: 400;
+	font-size: 54px;
+	line-height: 59px;
+	order: 1;
+	margin-bottom: 18px;
+}
+
+.hero__subtitle {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	order: 0;
+	margin-bottom: 2px;
+}
+
+.hero__description {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	order: 2;
+}
+//--------HERO--------
+
+//--------WHAT WE DO-------
+.whatWheDo__box {
+	padding: 120px;
+}
+
+.whatWheDo__text {
+	text-align: center;
+}
+
+.whatWheDo__text-title {
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 42px;
+	color: $secondary-color;
+	margin-bottom: 15px;
+}
+
+.whatWheDo__text-description {
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 30px;
+	margin-bottom: 42px;
+}
+
+.card {
+	position: relative;
+}
+
+.card-description {
+	position: absolute;
+	left: 30px;
+	top: 421px;
+}
+
+.card-title {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+//--------WHAT WE DO-------

@@ -54,6 +54,31 @@ body {
 	}
 }
 
+.button-hole {
+	padding: 10px 10px 10px 5px;
+	border: none;
+	border-radius: 14px;
+	font-size: 1rem;
+	line-height: 1.333;
+	letter-spacing: 0.4px;
+	color: #000000;
+	background-color: $secondary-color;
+	cursor: pointer;
+
+	&::before {
+		content: url(../img/icons/button-hole.svg);
+		margin-right: 5px;
+		vertical-align: middle;
+		}
+
+	&:hover,
+	&:focus {
+		color: $secondary-color;
+		background-color: $accent-color;
+		transition: 0.2s;
+	}
+}
+
 // Info in picture
 
 .img__info {

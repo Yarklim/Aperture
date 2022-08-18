@@ -53,6 +53,28 @@ body {
   transition: 0.2s;
 }
 
+.button-hole {
+  padding: 10px 10px 10px 5px;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  line-height: 1.333;
+  letter-spacing: 0.4px;
+  color: #000000;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.button-hole::before {
+  content: url(../img/icons/button-hole.svg);
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.button-hole:hover, .button-hole:focus {
+  color: #ffffff;
+  background-color: rgba(240, 149, 74, 0.9333333333);
+  transition: 0.2s;
+}
+
 .img__info {
   display: flex;
   gap: 15px;
@@ -238,4 +260,46 @@ body {
   font-size: 14px;
   line-height: 20px;
   order: 2;
+}
+
+.whatWheDo__box {
+  padding: 120px;
+}
+
+.whatWheDo__text {
+  text-align: center;
+}
+
+.whatWheDo__text-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.whatWheDo__text-description {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+  margin-bottom: 42px;
+}
+
+.card {
+  position: relative;
+}
+
+.card-description {
+  position: absolute;
+  left: 30px;
+  top: 421px;
+}
+
+.card-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */
