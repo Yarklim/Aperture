@@ -27,7 +27,7 @@
 			width: 30px;
 			height: 18px;
 			position: relative;
-			z-index: 5;
+			z-index: 55;
 			cursor: pointer;
 			span {
 				position: absolute;
@@ -102,7 +102,6 @@
 		&:hover,
 		&:focus {
 			color: $accent-color;
-			text-decoration: underline;
 			transition: all 0.2s ease-out;
 		}
 		@media (max-width: 960px) {

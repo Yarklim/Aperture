@@ -46,6 +46,12 @@
 //--------HERO--------
 
 //--------WHAT WE DO-------
+.whatWheDo__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
 .whatWheDo__box {
 	padding: 120px;
 }
@@ -73,18 +79,28 @@
 	position: relative;
 }
 
-.card-description {
+.card-text {
 	position: absolute;
 	left: 30px;
-	top: 421px;
+	bottom: 30px;
 }
 
 .card-title {
+	display: inline-block;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	margin-bottom: 30px;
+	color: $secondary-color;
+	margin-bottom: 15px;
+}
+
+.card-description {
+	max-width: 514px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 15px;
 }
 //--------WHAT WE DO-------

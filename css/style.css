@@ -132,7 +132,7 @@ body {
     width: 30px;
     height: 18px;
     position: relative;
-    z-index: 5;
+    z-index: 55;
     cursor: pointer;
   }
   .menu__icon span {
@@ -200,7 +200,6 @@ body {
 }
 .menu__link:hover, .menu__link:focus {
   color: rgba(240, 149, 74, 0.9333333333);
-  text-decoration: underline;
   transition: all 0.2s ease-out;
 }
 @media (max-width: 960px) {
@@ -262,6 +261,12 @@ body {
   order: 2;
 }
 
+.whatWheDo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 .whatWheDo__box {
   padding: 120px;
 }
@@ -289,17 +294,27 @@ body {
   position: relative;
 }
 
-.card-description {
+.card-text {
   position: absolute;
   left: 30px;
-  top: 421px;
+  bottom: 30px;
 }
 
 .card-title {
+  display: inline-block;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.card-description {
+  max-width: 514px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */
