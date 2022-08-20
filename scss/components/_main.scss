@@ -16,7 +16,6 @@
 	bottom: 60px;
 	left: 50%;
 	transform: translate(-50%);
-	color: white;
 }
 
 .hero__title {
@@ -25,6 +24,7 @@
 	line-height: 59px;
 	order: 1;
 	margin-bottom: 18px;
+	color: $secondary-color;
 }
 
 .hero__subtitle {
@@ -46,12 +46,6 @@
 //--------HERO--------
 
 //--------WHAT WE DO-------
-.whatWheDo__wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 16px;
-}
-
 .whatWheDo__box {
 	padding: 120px;
 }
@@ -75,8 +69,24 @@
 	margin-bottom: 42px;
 }
 
+.whatWheDo__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: calc(-1 * $card-set-gap);
+	margin-right: calc(-1 * $card-set-gap);
+	flex-basis: calc(100% / 2 - $card-set-gap);
+}
+
 .card {
 	position: relative;
+	margin-bottom: $card-set-gap;
+	margin-right: $card-set-gap;
+}
+
+.card-img {
+	border-radius: 14px;
+	overflow: hidden;
 }
 
 .card-text {

@@ -233,7 +233,6 @@ body {
   bottom: 60px;
   left: 50%;
   transform: translate(-50%);
-  color: white;
 }
 
 .hero__title {
@@ -242,6 +241,7 @@ body {
   line-height: 59px;
   order: 1;
   margin-bottom: 18px;
+  color: #ffffff;
 }
 
 .hero__subtitle {
@@ -259,12 +259,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   order: 2;
-}
-
-.whatWheDo__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
 }
 
 .whatWheDo__box {
@@ -290,8 +284,24 @@ body {
   margin-bottom: 42px;
 }
 
+.whatWheDo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -16px;
+  margin-right: -16px;
+  flex-basis: calc(50% - 16px);
+}
+
 .card {
   position: relative;
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+
+.card-img {
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 .card-text {
