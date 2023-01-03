@@ -1,0 +1,33 @@
+.header__hero {
+	max-width: 100%;
+}
+
+.header__hero-image {
+	position: relative;
+	width: 100%;
+}
+
+.image__info-list {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+}
+
+.header__hero-text {
+	text-align: center;
+	padding: 20px;
+	
+	& h1 {
+		font-size: .875rem;
+		color: $secondary-color;
+	}
+
+	& h2 {
+		font-size: 2rem;
+		color: $primary-color;
+	}
+
+	& p {
+		font-size: 0.75rem;
+	}
+}

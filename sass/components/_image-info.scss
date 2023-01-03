@@ -1,0 +1,33 @@
+// INFO ON AN IMAGES
+
+.image__info-list {
+	display: flex;
+	// position: absolute;
+	// right: 10px;
+	// top: 10px;
+	font-size: $font-sz-small;
+}
+
+.image__info-list1::before {
+	content: url(../img/icons/clock.svg);
+	width: 100%;	
+	margin-right: 5px;
+}
+
+.image__info-list2::before {
+	content: url(../img/icons/apperture.svg);
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.image__info-list3::before {
+	content: url(../img/icons/iso.svg);
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.image__info-list4::before {
+	content: url(../img/icons/location.svg);
+	margin-left: 10px;
+	margin-right: 5px;
+}

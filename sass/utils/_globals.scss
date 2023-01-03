@@ -1,0 +1,37 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a, a:link, a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img, svg {
+	display: block;
+}
+
+body {
+	min-width: 360px;
+	margin: 0 auto;
+	font-family: 'Poppins', sans-serif;
+	font-size: $font-sz-main;
+	background-color: #000;
+	overflow-x: hidden;
+}
+
+p, li, a {
+	color: $secondary-color;
+}

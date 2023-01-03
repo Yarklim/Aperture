@@ -1,0 +1,14 @@
+@import './reset.css';
+
+
+.font {
+	font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	min-width: 280px;
+	background-color: #000;
+	overflow-x: hidden;
+}
+

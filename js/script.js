@@ -1,5 +1,4 @@
-// ====== Burger Menu ========
-const menu = document.querySelector('.nav__body');
+const menu = document.querySelector('.menu__body');
 const menuBtn = document.querySelector('.menu__icon');
 
 const body = document.body;
@@ -12,14 +11,14 @@ if (menu && menuBtn) {
 	});
 
 	menu.addEventListener('click', e => {
-		if (e.target.classList.contains('nav__body')) {
+		if (e.target.classList.contains('menu__body')) {
 			menu.classList.remove('active');
 			menuBtn.classList.remove('active');
 			body.classList.remove('lock');
 		}
 	});
 
-	menu.querySelectorAll('.nav__item-link').forEach(link => {
+	menu.querySelectorAll('.menu__link').forEach(link => {
 		link.addEventListener('click', () => {
 			menu.classList.remove('active');
 			menuBtn.classList.remove('active');
@@ -27,4 +26,28 @@ if (menu && menuBtn) {
 		});
 	});
 }
-// ==========================
+
+/*===========================================*/
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+anchors.forEach(anchor => {
+	anchor.addEventListener('click', event => {
+		event.preventDefault();
+
+		const blockID = anchor.getAttribute('href').substring(1);
+
+		document.getElementById(blockID).scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		});
+	});
+});
+
+/*---------Fixed Menu-------------*/
+
+// const { height: pageHeaderHeight } = document
+// 	.querySelector(".navigation")
+// 	.getBoundingClientRect();
+
+// document.body.style.paddingTop = `${pageHeaderHeight}px`;

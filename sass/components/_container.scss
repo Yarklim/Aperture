@@ -1,0 +1,26 @@
+.container {
+	
+	
+
+	@media screen and (min-width: 360px) {
+		max-width: 420px;
+		
+	}
+
+	@media screen and (min-width: 640px) {
+		width: $tablet;
+		
+	}
+
+	@media screen and (min-width: 768px) {
+		width: $tablet-max;
+	}
+
+	@media screen and (min-width: 1024px) {
+		width: $notebook;
+	}
+
+	@media screen and (min-width: 1440px) {
+		width: $desktop;
+	}
+}

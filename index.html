@@ -1,112 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Aperture Studios, Photographer & Filmmaker"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./img/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./img/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Aperture Studios</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header container">
-      <div class="header__nav wrapper">
-        <a href="./index.html" class="logo" aria-label="Link to main page">
-          <img src="./img/logo/main_logo.svg" alt="Main logo" width="128" height="31">
-        </a>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aperture Studios</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
 
-        <div class="navigation__menu menu">
-          <div class="menu__icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <nav class="nav__body">
-            <ul class="nav__list">
-              <li class="nav__list-item">
-                <a href="#" class="nav__item-link" aria-label="Link to Business areas">Business areas</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav__item-link" aria-label="Link to Featured images">Featured images</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav__item-link" aria-label="Link to Gear cage">Gear cage</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav__item-link" aria-label="Link to Contact">Contact</a>
-              </li>
-              <a href="" class="btn-header btn">Get template</a>
-            </ul>
-          </nav>        
-        </div>
-        </div>
-    </header>
+<!-- Header -->
+	<header class="container">
+		<nav class="header__nav">
+			
+			<a href="./index.html" class="logo"><img src="./img/logo/main-logo.svg" alt="Logo Aperture" width="128"></a>
+			
+			<ul class="header__nav-list">
+				<li><a href="#business-areas">Business areas</a></li>
+				<li><a href="#Featured-images">Featured images</a></li>
+				<li><a href="#gear-cage">Gear cage</a></li>
+				<li><a href="#contacts">Contacts</a></li>
+			</ul>
 
-    <!-- Main -->
-    <main class="page">
-      <!-- Hero -->
-      <section class="hero container">
-        <div class="hero__content">
-          <div class="hero__content-description">
-            <h1 class="hero__title">Aperture Studios</h1>
-            <h2 class="hero__subtitle">Photographer & Filmmaker</h2>
-            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+			<a href="#" class="header__nav-btn">Get template</a>
+		</nav>
 
-            <ul class="image__info-list">
-              <li class="info-1 info-item">1/2000s</li>
-              <li class="info-2 info-item">f/11</li>
-              <li class="info-3 info-item">100</li>
-              <li class="info-4 info-item">Iceland</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-    
+		<article class="header__hero">
 
-    <!-- Footer -->
-    
+			<img src="./img/bg/background-header.jpg" alt="Background image 1" class="header__hero-image" width="1440">
 
-    <script defer src="./js/script.js"></script>
-  </body>
+			<div class="header__hero-text">
+				<h1>Photographer & Filmmaker</h1>
+				<h2>Aperture Studios</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+			</div>
+
+			<ul class="image__info-list">
+				<li class="image__info-list1">1/2000s</li>
+				<li class="image__info-list2">f/11</li>
+				<li class="image__info-list3">100</li>
+				<li class="image__info-list4">Iceland</li>
+			</ul>
+		</article>
+		
+	</header>
+
+	<main>
+<!-- What We Do -->
+	<section class="container" id="business-areas">
+		
+		<div class="whatWeDo__inner" id="whatWeDo">
+			<div class="whatWeDo__inner-text">
+				<h2 class="whatWeDo__inner-text-title">What we do.</h2>
+				<h3 class="whatWeDo__inner-text-about">The areas that we're specialized in.</h3>
+			</div>
+	
+			<div class="whatWeDo__cards">
+				<div class="whatWeDo__cards-card1">
+					<div class="card-content">
+						<h4 class="card-title">Product Photography</h4>
+						<p class="card-article1">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+						<a href="#" class="card-btn">Read more</a>
+					</div>
+				</div>
+				<div class="whatWeDo__cards-card2">
+					<div class="card-content">
+						<h4 class="card-title">Architecture Photography</h4>
+						<p class="card-article">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+						<a href="#" class="card-btn">Read more</a>
+					</div>
+				</div>
+				<div class="whatWeDo__cards-card3">
+					<div class="card-content">
+						<h4 class="card-title">Drone Photography</h4>
+						<p class="card-article">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+						<a href="#" class="card-btn">Read more</a>
+					</div>
+				</div>
+				<div class="whatWeDo__cards-card4">
+					<div class="card-content">
+						<h4 class="card-title">Wildlife Photography</h4>
+						<p class="card-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
+						<a href="#" class="card-btn">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+	</section>
+
+<!-- Sunset -->
+	<section class="sunset" id="Featured-images">
+		<div class="container__sunset">
+			<h2 class="container__sunset-title">Sunset at Mount Fuji</h2>
+			<p class="container__sunset-article">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>			
+		</div>
+		<ul class="sunset__info-list">
+			<li class="image__info-list1">1''</li>
+			<li class="image__info-list2">f/16</li>
+			<li class="image__info-list3">400</li>
+			<li class="image__info-list4">Japan</li>
+		</ul>
+	</section>
+
+<!-- Gear Cage -->
+	<section class="container" id="gear-cage">
+		<div class="gear__inner">
+			<div class="gear__inner-content">
+				<h2 class="gear__inner-title">The Gear cage</h2>
+				<h3 class="gear__inner-title2">The tools that we use.</h3>
+				<p class="gear__inner-article">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</p>
+				<a href="#" class="card-btn">Check it out</a>
+			</div>
+
+			<div class="gear__inner-image">
+				<ul class="gear__inner-list">
+					<li class="image__info-list1">0,8''</li>
+					<li class="image__info-list2">f/5,6</li>
+					<li class="image__info-list3">100</li>
+					<li class="image__info-list4">Sweden</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+<!-- Monstera -->
+	<section class="monstera">
+		<div class="container__monstera">
+			<h2 class="container__monstera-title">Monstera Leafs</h2>
+			<p class="container__monstera-article">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+		</div>
+		<ul class="monstera__info-list">
+			<li class="image__info-list1">1/400s</li>
+			<li class="image__info-list2">f/3,5</li>
+			<li class="image__info-list3">100</li>
+			<li class="image__info-list4">Costa Rica</li>
+		</ul>
+		
+	</section>
+
+<!-- Clients -->
+	<section class="container" id="clients">
+		<div class="clients__inner">
+			<div class="clients__inner-title">
+				<h2>Past clients</h2>
+				<h3>Trusted by your favourite companies</h3>
+			</div>
+			
+			<ul class="clients__inner-list">
+				<li>
+					<a href="https://www.gkdc.design/work/hill-hayes" target="_blank">
+						<svg>
+							<use href="./img/icons/sprite.svg#logo-hill-hayes"></use>
+						</svg>
+					</a>
+				</li>
+				<li><a href="https://riksgransen.se/en/" target="blank">
+					<svg>
+						<use href="./img/icons/sprite.svg#logo-riksgransen"></use>
+					</svg>
+				</a></li>
+				<li><a href="https://onbeatdjschool.co.uk/studio-cai" target="_blank">
+					<svg>
+						<use href="./img/icons/sprite.svg#logo-studiocai"></use>
+					</svg>
+				</a></li>
+				<li><a href="https://m.facebook.com/Chill-Industries-740191532733192/" target="_blank">
+					<svg>
+						<use href="./img/icons/sprite.svg#logo-chillindustries"></use>
+					</svg>
+				</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Stockholm" target="_blank">
+					<svg>
+						<use href="./img/icons/sprite.svg#logo-stockholm"></use>
+					</svg>
+				</a></li>
+			</ul>
+			
+		</div>
+	</section>
+
+<!-- Star fall -->
+	<section class="starFall">
+		<div class="container__starFall">
+			<h2 class="container__starFall-title">Star fall in the Himalayas</h2>
+			<p class="container__starFall-article">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</p>
+		</div>
+		<ul class="starFall__info-list">
+			<li class="image__info-list1">6''</li>
+			<li class="image__info-list2">f/11</li>
+			<li class="image__info-list3">800</li>
+			<li class="image__info-list4">Nepal</li>
+		</ul>
+	</section>
+
+<!-- Need Help -->
+	<section class="container" id="contacts">
+		<div class="help__inner">
+			<h2>Need help with photography<br />or videography?</h2>
+			<h3>We're here for you!</h3>
+			<a href="#" class="card-btn">Check it out</a>
+		</div>
+	</section>
+
+<!-- Footer -->
+	<footer class="container">
+		<article class="footer__inner">
+
+			<div class="footer__inner-main">
+				<div class="footer__inner-logo">
+					<a href="./index.html" class="logo"><img src="./img/logo/main-logo.svg" alt="Logo Aperture" width="128"></a>
+					<h2>Photographers & videographers capturing the world around us.</h2>
+				</div>
+				<div class="footer__inner-list1">
+					<ul class="footer__inner-title links">
+					<li class="link-title"><a href="#business-areas">Business areas</a></li>
+					<li><a href="#product-photography">Product Photography</a></li>
+					<li><a href="#architecture-photography">Architecture Photography</a></li>
+					<li><a href="#drone-photography">Drone Photography</a></li>
+					<li><a href="#">Wildlife Photography</a></li>
+					</ul>
+				</div>
+				<div class="footer__inner-list2">
+					<ul class="footer__inner-title links">
+					<li class="link-title"><a href="./index.html">Pages</a></li>
+					<li><a href="#gear-cage">Gear cage</a></li>
+					<li><a href="#Featured-images">Featured images</a></li>
+					<li><a href="#contacts">Contact</a></li>
+					<li><a href="#">Style guide</a></li>
+					<li><a href="#">Instructions</a></li>
+					<li><a href="#">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer__inner-line"></div>
+
+			<div class="footer-subscribe">
+				<div class="footer__inner-subscribe">
+					<h3>Subscribe to our newsletter</h3>
+					<h4>Read about all the things we do.</h4>
+				</div>
+				<div class="footer__inner-form">
+					<form action="#" class="form-subscribe">
+						<input class="form-subscribe-email" type="email" placeholder="Enter your email">
+						<button class="form-subscribe-btn" type="submit">Subscribe</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="footer__inner-line"></div>
+
+			<div class="footer__socials">
+				<div class="footer__socials-title">
+					<h2>© Aperture Photography, Inc. All rights reserved. Licensing.</h2>
+				</div>
+				<div>
+					<ul class="footer__socials-links">
+						<li><a href="#">
+							<svg>
+								<use href="./img/icons/sprite.svg#twitter"></use>
+							</svg>
+						</a></li>
+						<li><a href="#">
+							<svg>
+								<use href="./img/icons/sprite.svg#instagram"></use>
+							</svg>
+						</a></li>
+						<li><a href="#">
+							<svg>
+								<use href="./img/icons/sprite.svg#facebook"></use>
+							</svg>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</article>
+
+	</footer>
+	</main>
+
+</body>
 </html>
